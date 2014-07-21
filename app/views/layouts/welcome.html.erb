@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body style="padding-top: 50px;padding-bottom: 20px;">
+<body>
+<%= render "layouts/header" %>
+<%=yield %>
+<%= render "layouts/footer" %>
 
-<%=yield%>
 </body>
 </html>      
