@@ -1,17 +1,12 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<div class="blog-post">
+	            <h2 class="blog-post-title"><%= raw @article.title %></h2>
+	            <p class="blog-post-meta"><%= @article.created_at.strftime("%b %d, %Y") %></p>
+	            <p><%= raw @article.text %> </p>
+        </div><!-- /.blog-post -->
  
 <h2>Comments</h2>
 <%= render @article.comments %>
  
-<h2>Add a comment:</h2>
 <%= render "comments/form" %>
  
 <%= link_to 'Edit Article', edit_article_path(@article) %> |

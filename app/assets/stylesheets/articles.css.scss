@@ -7,11 +7,49 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+  font-family: Cabin;
+  
   padding-top: 50px;
   padding-bottom: 20px;
+  /*background-image: url("fresh_snow.png")*/
+
 }
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+  font-family: Lobster;
+  color: black;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+  margin-left: 25%;
+}
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+  font-family: Lobster;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+  font-family: Cabin;
+}
+.sidebar-module{
+  font-family: Cabin;
+
+}
+.sidebar-title{
+    font-family: Cabin;
+    font-weight: 700;
+  }
+/*This are my own styles */
 
 h1, .h1,
 h2, .h2,
@@ -36,6 +74,9 @@ h6, .h6 {
   }
 }
 
+/*.article-margin{
+  width:50%;
+}*/
 
 /*
  * Masthead for nav
@@ -88,16 +129,7 @@ h6, .h6 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: normal;
-}
-.blog-description {
-  font-size: 20px;
-  color: #999;
-}
+
 
 
 /*
@@ -144,17 +176,7 @@ h6, .h6 {
  * Blog posts
  */
 
-.blog-post {
-  margin-bottom: 60px;
-}
-.blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
+
 
 
 /*
@@ -165,7 +187,7 @@ h6, .h6 {
   padding: 40px 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #e7e7e7;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {

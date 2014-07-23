@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
 
 <%= render "layouts/header" %>
 
@@ -15,7 +5,7 @@
 
       <div class="blog-header">
         <h1 class="blog-title">My Mind in a nutshell</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+        <p class="lead blog-description">...or rather several of them <i class="fa fa-smile-o"></i></p>
       </div>
 
       <div class="row">
@@ -24,21 +14,16 @@
         <div class="col-sm-8 blog-main">
          <!--Here all the pages related with the blog are going to be yield here-->
          <%=yield%>
-         <!--Here finishs it-->
-          <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
-          </ul>
-
+         <!--Here finishs it--> 
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <h4 class= "sidebar-title">About</h4>
+            <p id= "about-text">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
-          <div class="sidebar-module">
-            <h4>Archives</h4>
+          <div class="sidebar-module sidebar-module-inset">
+            <h4 class= "sidebar-title">Archives</h4>
             <ol class="list-unstyled">
               <li><a href="#">March 2014</a></li>
               <li><a href="#">February 2014</a></li>
@@ -59,7 +44,6 @@
       </div><!-- /.row -->
 
     </div><!-- /.container -->
-
+    <br>
     <%=render "layouts/footer"%>
-</body>
-</html>
+
