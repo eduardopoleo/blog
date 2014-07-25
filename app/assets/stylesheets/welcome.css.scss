@@ -4,7 +4,6 @@
 
 body{
 	color:black;
-	background-image:url("fresh_snow.png");
 }
 .jumbotron{
 	background-color: #4DBCE9;
@@ -26,6 +25,8 @@ body{
 .btn-default{
 	background-color: #D1E751;
 	font-family: Cabin;
+	position:relative;
+	top:5px;
 
 	.link-btn{
 	color:black;

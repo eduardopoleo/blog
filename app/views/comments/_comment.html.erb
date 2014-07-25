@@ -1,14 +1,16 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+<div class="comment-bubble">
+
+<%= link_to [comment.article, comment],
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+               data: { confirm: 'Are you sure?' }  do %>
+  <i class="fa fa-eraser edit"></i>
+<% end %>
+
+	
+	<h3 class="commenter"><%= comment.commenter %></h3>
+	
+	<p class="comment-text"><%= raw simple_format(comment.body)%></p>
+			 
+	
+</div>
+<br>

@@ -1,7 +1,10 @@
-<% @articles.each do |article| %>
+<% @articles.reverse.each do |article| %>
         <div class="blog-post">
+        	<%=link_to article_path(article), {:class =>"link_to-style"} do %>
 	            <h2 class="blog-post-title"><%= raw article.title %></h2>
+	        <% end %>
+
 	            <p class="blog-post-meta"><%= article.created_at.strftime("%b %d, %Y") %></p>
 	            <p><%= raw article.text.truncate(200) %> <a><%= link_to 'Show More', article_path(article) %></a></p>
-        </div><!-- /.blog-post -->
+        </div><!-- /.blog-post -->	
 <% end %>

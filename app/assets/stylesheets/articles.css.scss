@@ -35,6 +35,10 @@ body {
   margin-bottom: 5px;
   font-size: 40px;
   font-family: Lobster;
+  color:black;
+  &:hover{
+    text-decoration: none;
+  }
 }
 .blog-post-meta {
   margin-bottom: 20px;
@@ -49,6 +53,11 @@ body {
     font-family: Cabin;
     font-weight: 700;
   }
+
+.side-list-date{
+    color:#999;
+    font-size: 11px;
+}
 /*This are my own styles */
 
 h1, .h1,
@@ -130,7 +139,12 @@ h6, .h6 {
   padding-bottom: 20px;
 }
 
-
+.link_to-style{
+  color:black;
+  &:hover{
+    text-decoration:none;
+  }
+}
 
 /*
  * Main column and sidebar layout
@@ -148,7 +162,7 @@ h6, .h6 {
 }
 .sidebar-module-inset {
   padding: 15px;
-  background-color: #f5f5f5;
+  background-color: #e7e7e7;
   border-radius: 4px;
 }
 .sidebar-module-inset p:last-child,

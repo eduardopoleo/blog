@@ -1,3 +1,36 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.comment-bubble{
+	background-color: #e7e7e7;
+	border-radius: 4px;
+	padding:20px;
+	overflow: hidden;
+}
+.commenter{
+	font-family: Cabin;
+	font-weight: 600;
+	color:#D1E751;
+	
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.comments-count{
+	font-family: cabin;
+	font-size: 25px;
+}
+.comment-text-area{
+	width: 100px;
+  height: 1000px;
+}
+
+.edit{
+	float:right;
+	position:relative;
+	padding-right: 10px;
+	color:black;
+}
