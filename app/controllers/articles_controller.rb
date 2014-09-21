@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   
   def create
     @article = Article.new(article_params)
- 
+    @articles = Article.all
     if @article.save
       redirect_to @article
     else

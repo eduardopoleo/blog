@@ -2,7 +2,7 @@
 	            <h2 class="blog-post-title"><%= raw @article.title %></h2>
 
 	            <p class="blog-post-meta"><%= @article.created_at.strftime("%b %d, %Y") %></p>
-	            <p><%= raw simple_format(@article.text) %> </p>
+	            <p><%= raw @article.text %> </p>
 
 	            
         </div><!-- /.blog-post -->
