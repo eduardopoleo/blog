@@ -1,12 +1,10 @@
 <div class="blog-post">
-	            <h2 class="blog-post-title"><%= raw @article.title %></h2>
-
-	            <p class="blog-post-meta"><%= @article.created_at.strftime("%b %d, %Y") %></p>
-	            <p><%= raw @article.text %> </p>
-
-	            
-        </div><!-- /.blog-post -->
+	<h2 class="blog-post-title"><%= raw @article.title %></h2>
+	<p class="blog-post-meta"><%= @article.created_at.strftime("%b %d, %Y") %></p>
+	<p><%= raw @article.text %> </p>
+</div><!-- /.blog-post -->
  
+<%= link_to "Back to Articles...", articles_path%> 
 <h2 class="comments-count"><%=@article.comments.count%> Comments</h2>
 <%= render @article.comments.reverse%>
  
