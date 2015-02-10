@@ -1,46 +1,20 @@
-
-<%= render "layouts/header" %>
-
+<!DOCTYPE html>
+<html>
+  <%= render 'layouts/header' %>
+  <%= render 'shared/navbar' %>
+  <body>
     <div class="container">
-
-      <div class="blog-header">
-        <h1 class="blog-title">My Mind in a nutshell</h1>
-        <p class="lead blog-description">...or rather several of them <i class="fa fa-smile-o"></i></p>
-      </div>
-
+      <%= render 'shared/blog_title' %>
       <div class="row">
-
-        
         <div class="col-sm-8 blog-main">
-         <!--Here all the pages related with the blog are going to be yield here-->
          <%=yield%>
-         <!--Here finishs it--> 
         </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4 class= "sidebar-title">About</h4>
-            <p id= "about-text">The topics in this blog will be varied but they will surely contain: programing, web technologies and cool miscellaneous. Sit, read, comment and enjoy!</p>
-          </div>
-          <div class="sidebar-module sidebar-module-inset">
-
-            <h4 class= "sidebar-title">Latest Posts</h4>
-            <ol class="list-unstyled">
-              <%@articles.last(2).reverse.each do |article| %>
-              <%=link_to article_path(article), {:class=>"link_to-style"} do %>
-              <li class = "side-list"><%=article.title%></li>
-              <% end %>
-              <p class="side-list-date"><%= article.created_at.strftime("%b %d, %Y") %></p>
-              <br>
-              <%end%>
-
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
-
+        <%= render 'shared/blog_sidebar' %> 
       </div><!-- /.row -->
-
     </div><!-- /.container -->
     <br>
     <%=render "layouts/footer"%>
+  </body>
+</html>
+<!-- /, Coments and articles follow this layout -->
 

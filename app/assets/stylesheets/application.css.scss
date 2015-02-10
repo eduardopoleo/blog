@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require bootstrap.min
+ *= require_tree .
+ *= require_self
+ */
+
+$title-color: #383025;
+$small-title-color: #5C021E;
+
+.jumbotron{
+  background-color: white;
+}
+
+#myname{
+  color: $title-color;
+  font-size:5em;
+  font-family: helvetica;
+}
+
+#profession{
+  
+}
+
+#logo{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:none;
+}
+
+#abilities{
+  margin-top:5%;
+}
+
+.navbar-default{
+  background-color: white;
+  border: none;
+}
+
+#blog-link{
+  font-size:2em;
+}
+
+.category{
+  font-size: 3em;
+  color: #E9633B;
+  font-family: helvetica;
+  color: $title-color;
+}
+
+.ability-list{
+  list-style: none;
+  position: relative;
+  right: 3%;
+}
+
+.ability-list li{
+  font-size: 1.7em;
+  font-family: garamond;
+  margin-top: 3%;
+  color: $small-title-color;
+}
+
+.project-image{
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.feature-list{
+  margin-top: 10%; /* Remove this for smaller screen sizes */
+  font-size: 1.5em;
+  list-style: none;
+  padding: 0px;
+}
+
+.project-description{
+  margin-top: 5%;
+  font-size: 1.4em;
+}
+
+.project{
+  overflow: hidden;
+  margin-top:5%; 
+}
+
+.project-title{
+  color:$small-title-color;
+}
+
+.light-panel{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.dark-panel{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.category{
+  font-family:helvetica;
+  font-family: bold;
+}
+
+#PROJECT{
+  color: $title-color;
+  font-size: 5em;
+  margin-top: 5%;
+}
