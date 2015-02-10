@@ -1,113 +1,394 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li id="blog-link"><a href="#">BLOG</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav> <!-- end of navbar -->
-
-
-<div class = 'jumbotron text-center'>
-  <img id='logo' src="logo.png" alt="My Logo" height="100" width="100"/>
-  <h1 id = 'myname'>Eduardo Poleo</h1>  
-  <p id = 'profession'>Web Developer & Engineer</p>
-
-  <button type="button" class="btn btn-default">
-    Download Resume
-  </button>
-</div> <!-- end of jumbotron -->
-
-<div class = 'row' id='abilities'>
-  <div class="col-md-4 text-center"> 
-    <h3 class='category'>Wireframing & Prototyping</h3>
-    <ul class = 'ability-list'>
-      <li>Bootstrap 3</li>
-      <li>JQueryUI</li>
-      <li>Balsamiq Mockups</li>
-      <li>HTML5&CSS3</li>
-    </ul>
-  </div>
-
-  <div class="col-md-4">
-    <h3 class='category text-center'>Back-end Development</h3>
-    <ul class = 'ability-list text-center'>
-      <li>Ruby on Rails</li>
-      <li>MVC + REST</li>
-      <li>TDD (Rpec & Capybara)</li>
-      <li>JQuery/Ajax</li>
-      <li>SQLite3 & PostgresSQL</li>
-    </ul>
-  </div>
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+  <title>Responsive HTML5 Website Template for Developers | 3rd Wave Media</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+  <meta name="author" content="3rd Wave Media">    
+  <link rel="shortcut icon" href="favicon.ico">  
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+  <!-- github acitivity css -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
   
-  <div class="col-md-4">
-    <h3 class='category text-center'>Agile & Efficient Develoment</h3>
-    <ul class = 'ability-list text-center'>
-      <li>GitHub</li>
-      <li>Scrum</li>
-      <li>Pivotal Tracker</li>
-      <li>Vim + Tmux</li>
-    </ul>
-  </div>
-</div> <!-- end of ability rows  -->
+  <!-- Theme CSS -->  
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head> 
 
-<h1 id='PROJECT' class = 'text-center'>PROJECTS</h1>
+<body>
+  <!-- ******HEADER****** --> 
+  <header class="header">
+    <div class="container">                       
+      <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="James Lee" />
+      <div class="profile-content pull-left">
+        <h1 class="name">Eduardo Poleo</h1>
+        <h2 class="desc">Web Developer & Engineer</h2>   
+        <ul class="social list-inline">
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-github-alt"></i></a></li>                  
+        </ul> 
+      </div><!--//profile-->
+      <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+    </div><!--//container-->
+  </header><!--//header-->
+  
+  <div class="container sections-wrapper">
+    <div class="row">
+      <div class="primary col-md-8 col-sm-12 col-xs-12">
+        <section class="about section">
+          <div class="section-inner">
+            <h2 class="heading">About Me</h2>
+            <div class="content">
+              <p>I am a tech-enthusiast who enjoys creating applications other people can see, use, share and modify. I have experience using Ruby, RoR, Matlab and Python and I am currently looking for a motivating and challenging Jr. Dev position in Toronto.</p>    
+              <p>If you want to know more about me, my skill set or my portfolio, please make sure to check my blog or contact me .</p>
 
-<div class = 'project row'>
-  <div class = 'col-md-3 col-md-offset-2 text-center light-panel'>
-    <h2 class = 'project-title'>Check-it </h2>
-    <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-     Check it a un conventional todo list application that allows you create and label projects and track your project's progress. It is simple a simple application but has great functionalities</p>
-  </div>
+            </div><!--//content-->
+          </div><!--//section-inner-->                 
+        </section><!--//section-->
 
-  <div class = 'col-md-3 col-md-offset-2 text-center dark-panel'>
-    <h2 class = 'project-title'>Myflix </h2>
-  <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-     Myflix a a non-trivial ecommerce application that resemble Netflix. Allows users to watch videos on demand, queue videos to watch and follow other users activity.</p>
-  </div>
-</div>
+        <section class="latest section">
+          <div class="section-inner">
+            <h2 class="heading">Web Projects</h2>
+            <div class="content">    
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="https://eduardo-myflix.herokuapp.com/" target="_blank">
+                  <img class="img-responsive project-image" src="myflix.png" alt="project name"/>
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="https://eduardo-myflix.herokuapp.com/" target="_blank">Myflix</a></h3>
+                  <p>Myflix is a non-trivial ecommerce application, a clone of  Netflix. It allows users to watch videos on demand, queue videos and follow other users activity.</p>
+                  <p>Technical features: TDD with over 200 test cases using Rspec + Capybara, social networking, random-tokens and mailers, full fledged user authentication from scratch, others.</p>
+                  <p><a class="more-link" href="http://eduardo-postit.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
 
-<div class = 'project row'>
-  <div class = 'col-md-3 col-md-offset-2 text-center dark-panel'>
-    <h2 class = 'project-title'>Qoverflow </h2>
-    <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-     Qoverflow emulates the popular Q&A site Quora. Users can sign to get access to the forum, post questions, upvote or downvote answers.</p>
-  </div>
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="https://eduardo-check-it.herokuapp.com/" target="_blank">
+                  <img class="img-responsive project-image" src="checkit.png" alt="project name" />
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="https://eduardo-check-it.herokuapp.com/" target="_blank">Check-it</a></h3>
+                  <p>Check is a todo application that helps keep track of projects and tasks. It also provides an interactive progress bar that tracks down progress as tasks are completed.</p>
+                  <p>Technical features: Interactive UI elements (Ajax, JQuery), fully responsive display, simple user authentication, restful implementation, others. </p>
+                  <p><a class="more-link" href="https://eduardo-check-it.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
 
-  <div class = 'col-md-3 col-md-offset-2 text-center light-panel'>
-    <h2 class = 'project-title'>Bazaar </h2>
-    <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-     It is convenient market place to sell, trade and publicize mobile phones. Users can sign in and create ads or they can simply look around the offering.</p>
-  </div>
-</div>
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="https://qoverflow.herokuapp.com/signin" target="_blank">
+                  <img class="img-responsive project-image" src="qoverflow.png" alt="project name" />
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="https://qoverflow.herokuapp.com/signin" target="_blank">Qoverflow</a></h3>
+                  <p>Qoverflow is a mini clone of the popular Q&A site Quora. Users can post questions and answers, upvote and downvote elements. </p>
+                  <p>Technical Features: Comprehensive test suite with 70 test cases using Rspec + Capybara, polymorphic model association, others.</p>
+                  <p><a class="more-link" href="https://qoverflow.herokuapp.com/signin" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
 
-<div class = 'project row'>
-  <div class = 'col-md-3 text-center col-md-offset-2 light-panel'>
-    <h2 class = 'project-title'>Post-It </h2>
-    <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-     Check it a un conventional todo list application that allows you create and label projects and track your project's progress. It is simple a simple application but has great functionalities</p>
-  </div>
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
+                  <img class="img-responsive project-image" src="bazaar.png" alt="project name" />
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="#" target="_blank">Bazaar</a></h3>
+                    <p>Bazaar is a convinient market place to sell, trade and publitize mobile phones, users can sign in to post ads or simply look around the offering.</p>
+                  <p>Technical Features: Agile development using Scrum and github workflow, faceted search using Elastic Search, user authentication with Devise, others.</p>
+                  <p><a class="more-link" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
 
-  <div class = 'col-md-3 text-center col-md-offset-2 ark-panel'>
-    <h2 class = 'project-title'>BlackJack </h2>
-  <img class='project-image' src="checkit.png" alt="My Logo" height="150" width="250"/>
-    <p class = 'project-description'>
-    BlackJack is a interactive web-based blackjack application developed with the Sinatra web framework. </p>
-  </div>
-</div>
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="http://eduardo-postit.herokuapp.com/" target="_blank">
+                  <img class="img-responsive project-image" src="postit.png" alt="project name" />
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="http://eduardo-postit.herokuapp.com/" target="_blank">Post It</a></h3>
+                    <p>Post it allows users share ideas and news by posting links on the main forums. Post can be categorized and users can upvote or downvote alements.</p>
+                  <p>Technical Features: M:M and Polymorphic model associations, asynchronous features (Ajax and JQuery), basic roles, other.</p>
+                  <p><a class="more-link" href="http://eduardo-postit.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
+
+              <div class="item row">
+                <a class="col-md-4 col-sm-4 col-xs-12" href="http://eduardo-blackjack.herokuapp.com/game" target="_blank">
+                  <img class="img-responsive project-image" src="blackjack.png" alt="project name" />
+                </a>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="http://eduardo-blackjack.herokuapp.com/game" target="_blank">BlackJack</a></h3>
+                    <p>BlackJack is an interactive web-based application. Users can bet and try to beat the "house".</p>
+                  <p>Technical Features: Sinatra, Ajax, Boostrap, others.</p>
+                  <p><a class="more-link" href="http://eduardo-blackjack.herokuapp.com/game" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                </div><!--//desc-->                          
+              </div><!--//item-->
+
+            </div><!--//content-->  
+          </div><!--//section-inner-->                 
+        </section><!--//section-->
+
+        <section class="projects section">
+          <div class="section-inner">
+            <h2 class="heading">Research Projects </h2>
+            <div class="content">
+
+              <div class="item">
+                <h3 class="title"><a href="#">Bio-remediation of mixtures of toxic and volatile contantinants in water by partitioning bio-reactors.</a> <span class="label label-theme">Chemical Engineering</span></h3>
+                <p class="summary">Developed a novel polymer-based technology that improved the degradation rate of contaminants in water by 98% compared to other conventional treatment strategies. This required the design and result analysis of approximately 95 experiments.</p>
+                <p>The findings of this project resulted in two original scientific publications:</p>
+                <ul>
+                  <li>J. Hazard. Mater., 254-255: 206-213 (2013)</li>
+                  <li>J. Chem. Technol. Biotechnol., 89: 88-96 (2014)</li>
+                </ul>
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="title"><a href="#">Kinetic Analysis and Modeling of the Ring Opening Reaction of Decalin over a Pt-modified Zeolite Catalyst</a> <span class="label label-theme">Chemical Engineering</span></h3>
+                <p class="summary"> Designed a statistically sound kinetic model for the aforementioned reaction that increased complexity and accuracy over previous models by 57 %. This contributed to a major diesel-fuel quality improvement project.</p>
+              </div><!--//item-->
+            </div><!--//content-->  
+          </div><!--//section-inner-->                 
+        </section><!--//section-->
+
+        <section class="experience section">
+          <div class="section-inner">
+            <h2 class="heading">Work Experience</h2>
+            <div class="content">
+              <div class="item">
+                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
+                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+              </div><!--//item-->
+              <div class="item">
+                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
+                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+              </div><!--//item-->
+
+            </div><!--//content-->  
+          </div><!--//section-inner-->                 
+        </section><!--//section-->
+        <section class="github section">
+          <div class="section-inner">
+            <h2 class="heading">My GitHub</h2>
+            <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget. You can also take a screenshot of your GitHub chart and put it here for fun.</p>
+            <p><a href="#"><img class="img-responsive" src="assets/images/github-chart.png" alt="GitHub Contributions Chart" /></a></p>               
+            <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
+            <div id="ghfeed" class="ghfeed">
+            </div><!--//ghfeed-->
+
+          </div><!--//secton-inner-->
+        </section><!--//section-->
+      </div><!--//primary-->
+      <div class="secondary col-md-4 col-sm-12 col-xs-12">
+         <aside class="info aside section">
+            <div class="section-inner">
+              <h2 class="heading sr-only">Basic Information</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Toronto, Ontario, Canada</li>
+                  <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">eduardopoleo@gmail.com</a></li>
+                  <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li>
+                </ul>
+              </div><!--//content-->  
+            </div><!--//section-inner-->                 
+          </aside><!--//aside-->
+                
+          <aside class="skills aside section">
+            <div class="section-inner">
+              <h2 class="heading">Skills</h2>
+              <div class="content">
+                <p class="intro">
+                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
+                <div class="skillset">
+                  <div class="item">
+                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                    <div class="level-bar">
+                      <div class="level-bar-inner" data-level="96%">
+                      </div>                                      
+                    </div><!--//level-bar-->                                 
+                  </div><!--//item-->
+                  
+                  <div class="item">
+                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
+                    <div class="level-bar">
+                      <div class="level-bar-inner" data-level="96%">
+                      </div>                                      
+                    </div><!--//level-bar-->                                 
+                  </div><!--//item-->
+                  
+                  <div class="item">
+                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Expert</span></h3>
+                    <div class="level-bar">
+                      <div class="level-bar-inner" data-level="96%">
+                      </div>                                      
+                    </div><!--//level-bar-->                                 
+                  </div><!--//item-->
+                  
+                  <div class="item">
+                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
+                    <div class="level-bar">
+                      <div class="level-bar-inner" data-level="85%">
+                      </div>                                      
+                    </div><!--//level-bar-->                                 
+                  </div><!--//item-->
+                      
+                  <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p> 
+                </div> <!-- //skillset -->              
+              </div><!--//content-->  
+            </div><!--//section-inner-->                 
+          </aside><!--//section-->
+              
+          <aside class="testimonials aside section">
+            <div class="section-inner">
+              <h2 class="heading">Testimonials</h2>
+              <div class="content">
+                <div class="item">
+                  <blockquote class="quote">                                  
+                      <p><i class="fa fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                  </blockquote>                
+                  <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                </div><!--//item-->
+                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </aside><!--//section-->
+              
+          <aside class="education aside section">
+            <div class="section-inner">
+              <h2 class="heading">Education</h2>
+              <div class="content">
+                <div class="item">                      
+                  <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Psychology and Computer Science</h3>
+                  <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                </div><!--//item-->
+                <div class="item">
+                  <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computer Science</h3>
+                  <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
+                </div><!--//item-->
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </aside><!--//section-->
+                          
+          <aside class="languages aside section">
+            <div class="section-inner">
+              <h2 class="heading">Languages</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li class="item">
+                    <span class="title"><strong>English:</strong></span>
+                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                  </li><!--//item-->
+                  <li class="item">
+                    <span class="title"><strong>Spanish:</strong></span>
+                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                  </li><!--//item-->
+                </ul>
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </aside><!--//section-->
+              
+          <aside class="blog aside section">
+            <div class="section-inner">
+              <h2 class="heading">Latest Blog Posts</h2>
+              <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+              <div id="rss-feeds" class="content">
+
+              </div><!--//content-->
+            </div><!--//section-inner-->
+          </aside><!--//section-->
+              
+          <aside class="list music aside section">
+            <div class="section-inner">
+                <h2 class="heading">Favourite coding music</h2>
+                <div class="content">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                        <li><i class="fa fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
+                        <li><i class="fa fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                        <li><i class="fa fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                    </ul>
+                </div><!--//content-->
+            </div><!--//section-inner-->
+          </aside><!--//section-->
+              
+              <aside class="list conferences aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Conferences</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                              <li><i class="fa fa-calendar"></i> <a href="https://developer.apple.com/wwdc/" target="_blank">WWDC 2014</a> (San Francisco)</li>
+                              <li><i class="fa fa-calendar"></i> <a href="http://hive.aigaseattle.org/">Hive</a> (Seattle)</li>
+                          </ul>
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
+              
+              <aside class="credits aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Credits</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                              <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link"></i> Bootstrap 3.2</a></li>
+                              <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-external-link"></i> FontAwsome 4.1</a></li>
+                              <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-external-link"></i> jQuery</a></li>
+                              <li><a href="http://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fa fa-external-link"></i> GitHub Activity Stream</a></li>
+                              
+                              <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fa fa-external-link"></i> jQuery RSS</a></li>
+                              
+                              <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
+                              <li>iPad and iPhone mocks: <a href="https://dribbble.com/perlerar" target="_blank">Regy Perlera</a></li>
+                              
+                          </ul>
+                          
+                          <hr/>
+                          
+                           <p>This responsive HTML5 CSS3 site template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
+                           <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
+                          <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a>
+                          <a class="btn btn-cta-primary btn-download" href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank"><i class="fa fa-download"></i> I want to download</a>
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
+            
+          </div><!--//secondary-->    
+      </div><!--//row-->
+  </div><!--//masonry-->
+  
+  <!-- ******FOOTER****** --> 
+  <footer class="footer">
+      <div class="container text-center">
+              <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
+      </div><!--//container-->
+  </footer><!--//footer-->
+
+  <!-- Javascript -->          
+  <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+  <!-- github activity plugin -->
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
