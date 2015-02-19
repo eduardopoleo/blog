@@ -4,6 +4,6 @@
 	     <h2 class="blog-post-title"><%= raw article.title %></h2>
     <% end %>
     <p class="blog-post-meta"><%= article.created_at.strftime("%b %d, %Y") %></p>
-    <p><%= raw Nokogiri::HTML.parse(article.text).css('p').first.text  %> ... <%= link_to 'Show More', article_path(article) %></p>
+    <p><%= (raw article.text).slice(0..100) %></p>
   </div><!-- /.blog-post -->	
 <% end %>
