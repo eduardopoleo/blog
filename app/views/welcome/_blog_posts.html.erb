@@ -1,0 +1,17 @@
+<aside class="blog aside section">
+  <div class="section-inner">
+    <h2 class="heading">Latest Blog Posts</h2>
+    <p>Make sure you checkout my blog here you have the latest entries.</p>
+    <div id="rss-feeds" class="content">
+      <ol class="list-unstyled">
+        <%@articles.reverse.each do |article| %>
+          <%=link_to article_path(article), {:class=>"link_to-style"} do %>
+            <li class = "side-list"><%=article.title%></li>
+          <% end %>
+          <p class="side-list-date"><%= article.created_at.strftime("%b %d, %Y") %></p>
+          <br>
+        <%end%>
+      </ol>
+    </div><!--//content-->
+  </div><!--//section-inner-->
+</aside><!--//section-->

@@ -1,6 +1,6 @@
 <div class="blog-post">
 	<h1 class="blog-post-title text-center"><%= raw @article.title %></h1>
-	<p class="blog-post-meta"><%= @article.created_at.strftime("%b %d, %Y") %></p>
+	<p class="blog-post-meta text-center"><%= @article.created_at.strftime("%b %d, %Y") %></p>
   <p><%= markdown @article.text %> </p>
 </div><!-- /.blog-post -->
 
