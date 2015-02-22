@@ -1,9 +1,19 @@
-<% @articles.each do |article| %>
-  <div class="blog-post">
-    <%=link_to article_path(article), {:class =>"link_to-style"} do %>
-	     <h2 class="blog-post-title"><%= raw article.title %></h2>
-    <% end %>
-    <p class="blog-post-meta"><%= article.created_at.strftime("%b %d, %Y") %></p>
-    <p><%= (raw article.text).slice(0..100) %></p>
-  </div><!-- /.blog-post -->	
-<% end %>
+<div class = 'row'>
+  <%= render 'shared/blog_title' %>
+  <div class = 'col-sm-8 blog-mail'>
+    <% @articles.each do |article| %>
+      <div class="blog-post">
+        <%=link_to article_path(article), {:class =>"link_to-style"} do %>
+           <h2 class="blog-post-title"><%= raw article.title %></h2>
+        <% end %>
+        <p class="blog-post-meta"><%= article.created_at.strftime("%b %d, %Y") %></p>
+        <p><%= markdown article.text.slice(0..400) %> ... <%= link_to 'Show more', article_path(article) %></p>
+      </div><!-- /.blog-post -->	
+    <% end %> 
+  </div>
+
+  <div class = 'col-sm-3 col-sm-offset-1 blog-sidebar'>
+    <%= render 'shared/blog_sidebar' %> 
+  </div>
+</div>
+

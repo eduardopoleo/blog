@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
   <%= render 'layouts/header' %>
-  <%= render 'shared/navbar' %>
   <body>
     <div class="container">
-      <%= render 'shared/blog_title' %>
-      <div class="row">
-        <div class="col-sm-8 blog-main">
          <%=yield%>
-        </div><!-- /.blog-main -->
-        <%= render 'shared/blog_sidebar' %> 
-      </div><!-- /.row -->
     </div><!-- /.container -->
     <br>
     <%=render "layouts/footer"%>
