@@ -13,14 +13,34 @@ body {
   /*background-image: url("fresh_snow.png")*/
 
 }
-.blog-title {
+
+#blog-name{
   margin-top: 30px;
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 6em;
   font-weight: normal;
-  font-family: Lobster;
-  color: black;
 }
+
+#coffee{
+  font-family: Indie Flower;
+  font-weight: bold;
+  color: #663300;
+  letter-spacing: -1px;
+}
+
+#forwardslash{
+  font-size:85%;
+}
+
+#and{
+  font-size: 0.5em;
+}
+
+#tags-blog-header{
+  font-family: Courier New;
+  letter-spacing: -10px;
+}
+
 .blog-description {
   font-size: 20px;
   color: #999;
@@ -37,15 +57,20 @@ body {
 }
 
 .blog-post-title {
-  margin-top: 10%;
   font-size:3em;
   font-family: Cabin;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   color:black;
   &:hover{
     text-decoration: none;
   }
 }
+
+.blog-post-title-showpage{
+  @extend .blog-post-title;
+  margin-top: 5%;
+}
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -55,6 +80,11 @@ body {
   font-family: Cabin;
 
 }
+
+.articles-header-row{
+  margin-bottom: 8%; 
+}
+
 .sidebar-title{
     font-family: Cabin;
     font-weight: 700;
@@ -143,6 +173,9 @@ h6, .h6 {
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.header{
 }
 
 .link_to-style{

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   end
   
   root 'welcome#front_page'
+  get 'welcome', to: 'welcome#front_page', as: 'welcome'
 end

@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">                       
     <div class='row'>
-      <div class = 'col-sm-5'>
+      <div class = 'col-sm-6'>
         <div class="profile-content pull-left">
           <h1 class="name">Eduardo Poleo</h1>
           <h2 class="desc">Web Developer & Engineer</h2>   
@@ -22,10 +22,15 @@
           </ul>
         </div><!--//content-->  
       </div> <!-- end of column -->
-      <div class = 'col-sm-3'>
-        <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-pencil"></i>Blog</a>              
+
+      <div class = 'col-sm-2'>
+        <%= link_to articles_path do %>
+          <button class = 'btn btn-cta-primary pull-right'>
+            <i class="fa fa-pencil"></i>Blog
+          </button>
+        <%end%>
      </div>
-   </div> <!-- end of row -->
- </div><!--//container-->
+    </div> <!-- end of row -->
+  </div><!--//container-->
 </header><!--//header-->
 

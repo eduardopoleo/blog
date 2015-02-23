@@ -1,6 +1,7 @@
 <div class="blog-post">
-	<h1 class="blog-post-title text-center"><%= raw @article.title %></h1>
-	<p class="blog-post-meta text-center"><%= @article.created_at.strftime("%b %d, %Y") %></p>
+	<h1 class="blog-post-title-showpage text-center"><%= raw @article.title %></h1>
+  <p class="blog-post-meta text-center">  <i>by Eduado Poleo at <%= @article.created_at.strftime("%b %d, %Y") %></i></p>
+  <p class='text-center'> <%=link_to '...back to articles', articles_path %> </p>
   <p><%= markdown @article.text %> </p>
 </div><!-- /.blog-post -->
 
