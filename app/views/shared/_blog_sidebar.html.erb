@@ -6,7 +6,7 @@
 <div class="sidebar-module sidebar-module-inset">
   <h2 class= "heading">Latest Posts</h2>
   <ol class="list-unstyled">
-    <%@articles.last(2).reverse.each do |article| %>
+    <%@articles.first(2).each do |article| %>
       <%=link_to article_path(article), {:class=>"link_to-style"} do %>
       <li class = "side-list"><%=article.title%></li>
       <% end %>

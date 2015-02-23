@@ -191,7 +191,8 @@ iframe {
 .section {
 }
 .section .section-inner {
-  padding: 30px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 .section .heading {
   margin-top: 0;
@@ -301,6 +302,9 @@ iframe {
   margin-bottom: 30px;
 }
 
+.project-features{
+  padding-left: 5%;
+}
 .project-links{
   list-style-type: none;
   margin: 0;
@@ -362,6 +366,13 @@ iframe {
   font-weight: normal;
 }
 
+.research-project-title {
+  color: #999999;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
 /* Info Section */
 .info .fa {
   margin-right: 15px;
@@ -382,6 +393,9 @@ iframe {
 /* Skills Section */
 .skills .intro {
   margin-bottom: 30px;
+}
+.progress{
+  background-color: #CCCCB2;
 }
 .skills .skillset .item {
   margin-bottom: 30px;
