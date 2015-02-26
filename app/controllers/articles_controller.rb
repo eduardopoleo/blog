@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "eduardopoleo", password: "0437434", except: [:index, :show]
+  http_basic_authenticate_with name: NAME, password: PASSWORD, except: [:index, :show]
   
   def new
     @article = Article.new
@@ -20,8 +20,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @articles = Article.all
   end
-  
-  
   def index
     @articles = Article.all.order('created_at DESC')
   end
