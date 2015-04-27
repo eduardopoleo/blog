@@ -20,8 +20,9 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @articles = Article.all
   end
+
   def index
-    @articles = Article.all.order('created_at DESC')
+    @articles = Article.all.order('created_at DESC').paginate(page: params[:page], per_page: 5 )
   end
   
   def edit
