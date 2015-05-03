@@ -1,0 +1,44 @@
+#hi-sb{
+  color: #333232;
+  font-family: "Open Sans",sans-serif;
+}
+
+.sb-content{
+  font-size: 1.2em;
+  color: #333232;
+}
+
+.list-sb{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.odd-row-sb{
+  background-color: rgba(80,148,208, 0.7);
+}
+
+.even-row-sb{
+  background-color: rgba(239,74,49, 0.7);
+}
+
+#sb-table td, th {
+  border: none;
+}
+
+.sb-link{
+  color: #9dbd0a;
+  font-weight: 600;
+  &:hover{
+    color: #9dbd0a;
+  }
+}
+
+
+.sb-link-inside-table{
+  color: #657906;
+  font-weight: 600;
+  &:hover{
+    color: #657906;
+  }
+}

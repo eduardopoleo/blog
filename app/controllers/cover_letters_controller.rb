@@ -1,5 +1,5 @@
 class CoverLettersController < ApplicationController
-  def the_score
+  def the_score; end
 
-  end
+  def stack_builders; end
 end
