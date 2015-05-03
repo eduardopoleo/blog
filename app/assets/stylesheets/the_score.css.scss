@@ -1,0 +1,68 @@
+#hi{
+  font-family: arial;
+  color:white;
+}
+
+#the{
+  font-family: 'arial';
+  font-style: italic;
+  color: white;
+  font-size: 1.5em;
+}
+
+#score{
+  @extend #the;
+  color: #fab41f; 
+}
+
+#score_header{
+  background: none repeat scroll 0 0 #13233f;
+}
+
+#my-intro{
+  color:white;
+}
+
+.score-link{
+  color: #fab41f;
+}
+
+#eduardo{
+  color: #FFB84D; 
+}
+
+  
+
+.score-content{
+  margin-top: 3%;  
+  color: #21272d;
+  font-size: 1.2em; 
+}
+
+.table{
+  border: none;
+}
+
+#header-row{
+  color: #fab41f;
+  font-size: 1.5em;
+}
+
+#score-table{
+  border-radius: 4px;
+}
+
+#score-table td, .borderless th {
+  color: white;
+  border: none;
+  font-weight: 400;
+}
+
+.odd-row{
+  background:  #13233f;
+}
+
+.even-row{
+  background: #424F65;
+}
+

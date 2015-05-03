@@ -1,0 +1,23 @@
+<%= render 'articles/articles_header' %>
+<div class = 'row'>
+  <div class = 'col-sm-8 col-xs-12 blog-mail'>
+    <% articles.each do |article| %>
+      <div class="blog-post">
+        <% article.categories.each do |cat| %>
+          <span class='badge'><%=link_to cat.name, category_path(cat) %></span>
+        <% end %>
+        <%=link_to article_path(article), {:class =>"link_to-style"} do %>
+           <h2 class="blog-post-title"><%= raw article.title %></h2>
+        <% end %>
+        <p class="blog-post-meta">  <i><%=article.created_at.strftime("%b %d, %Y") %></i></p>
+        <p><%= markdown article.text.slice(0..400) %> ... <%= link_to 'Show more', article_path(article) %></p>
+      </div><!-- /.blog-post -->	
+    <% end %> 
+  </div>
+  <div class = 'col-sm-3 col-sm-offset-1 col-xs-12 blog-sidebar'>
+    <%= render 'shared/blog_sidebar' %> 
+  </div>
+</div>
+
+<%= will_paginate articles, renderer: BootstrapPagination::Rails %>
+

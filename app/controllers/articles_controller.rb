@@ -23,6 +23,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all.order('created_at DESC').paginate(page: params[:page], per_page: 5 )
+    @categories = Category.all
   end
   
   def edit
@@ -50,6 +51,6 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit!
   end
 end

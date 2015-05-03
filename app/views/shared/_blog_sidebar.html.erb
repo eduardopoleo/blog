@@ -1,6 +1,16 @@
 <div class="sidebar-module sidebar-module-inset">
-  <h2 class= "heading">About</h2>
-  <p id= "side-list">The topics in this blog will be varied but they will surely contain: programing, web technologies and cool miscellaneous. Sit, read, comment and enjoy!</p>
+  <h2 class= "heading">Categories</h2>
+  <ul id='category-list'> 
+    <% @categories.each do |cat| %>
+      <li>
+        <i class="fa fa-caret-right"></i>
+        <%= link_to category_path(cat) do %>
+          <%= "#{cat.name} (#{cat.articles.size})" %> 
+        <% end %>
+      </li>
+    <%end%>
+  </ul>
+
 </div>
 
 <div class="sidebar-module sidebar-module-inset">

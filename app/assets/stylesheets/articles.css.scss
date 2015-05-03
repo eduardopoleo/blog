@@ -14,6 +14,30 @@ body {
 
 }
 
+
+.badge-show{
+  vertical-align:middle;
+}
+#category-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li{
+    text-decoration: none;
+  } 
+}
+
+.badge{
+  background-color: #e02130;
+  a {
+    color: white;  
+    &:hover{
+      color: #C2C2A3; 
+      text-decoration: none;
+    }
+  }
+}
+
 #blog-name{
   margin-top: 30px;
   margin-bottom: 0;
@@ -71,10 +95,14 @@ body {
   margin-top: 5%;
 }
 
+.badges-container{
+  margin-bottom: 2%;
+}
+
 .blog-post-meta {
-  margin-bottom: 20px;
   color: #999;
   font-family: Cabin;
+  margin-bottom: 0;
 }
 .sidebar-module{
   font-family: Cabin;
