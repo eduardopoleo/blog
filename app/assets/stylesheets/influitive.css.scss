@@ -1,0 +1,86 @@
+.header-influitive{
+  background-image: linear-gradient(to bottom, #197097 0px, #269dbb 100%);
+  background-repeat: repeat-x;
+}
+
+#salutation{
+  font-size:4em;
+}
+
+#hi-influitive{
+  color: white; 
+  font-weight: 200;
+}
+
+#influitive{
+  color: #ADAD85;
+  font-family: Ubuntu;
+}
+
+.influitive-content{
+  margin-top: 3%;
+  font-size: 1.3em;  
+}
+
+.circular-image{
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+}
+
+.influitive-quality{
+  font-size: 1.3em;
+}
+
+#qualities-row{
+  margin-top: 4%; 
+}
+
+.quality-description{
+  margin-top: 6%;
+  font-size: 0.8em;
+}
+
+.influitive-link{
+  color:  #006600;
+  &:hover{
+    color: #f58030;
+    text-decoration:none;
+  }
+}
+
+#contribution-intro{
+  margin-top: 3%;
+  font-weight: 400;
+}
+
+#influitive-table{
+  margin-top: 3%;
+}
+
+#header-row-influitive{
+  font-size: 2em;
+}
+
+.odd-row-influitive{
+  background-color: rgba(25, 112, 151, 1)
+}
+
+.even-row-influitive{
+  background-color: rgba(25, 112, 151, 0.6)
+}
+
+#influitive-table{
+  font-size: 1.1em;
+  color: black;
+  a{
+    color:#006600;
+  }
+}
+
+
+
+#influitive-table td, th {
+  border: none;
+}
