@@ -15,8 +15,9 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @category = Category.find(params[:id])
     @categories = Category.all
-    @articles = Category.find(params[:id]).articles.order('created_at DESC').paginate(page: params[:page], per_page: 5 )
+    @articles = Category.find(params[:id]).articles.order('created_at DESC')
   end
 
   private

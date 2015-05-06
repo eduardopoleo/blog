@@ -56,6 +56,11 @@ body {
   font-weight: normal;
 }
 
+#blog-name-categories{
+  @extend #blog-name;
+  font-size: 2em;
+}
+
 #coffee{
   font-family: Indie Flower;
   font-weight: bold;
@@ -74,6 +79,12 @@ body {
 #tags-blog-header{
   font-family: Courier New;
   letter-spacing: -10px;
+}
+
+#big-category-name{
+  color: #e02130;
+  font-size: 6em;
+  margin-bottom: 7%;
 }
 
 .blog-description {

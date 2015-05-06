@@ -1,1 +1,3 @@
+<%= render 'articles/articles_header' %>
 <%= render partial: "shared/articles", locals: {articles: @articles} %>
+<%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
