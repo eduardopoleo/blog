@@ -1,8 +1,30 @@
+.header-info-tech{
+  background: none repeat scroll 0 0 #29475f;
+}
+
+.info-tech-content{
+  font-size: 1.2em;
+  margin-top: 3%;
+}
+
+#salutation-info-tech{
+  font-size: 4em;
+  font-weight: 200;
+  color: white;  
+}
+
+#info-tech{
+  font-family: "Roboto Slab",serif;
+}
+
+#qualities-info-tech{
+  margin-top: 3%;  
+}
+
 .info-tech-quality-name{
   font-size: 1.3em;
   color: white;
 }
-
 
 .full-box-link{
   &:hover{
@@ -56,10 +78,37 @@
   }
 }
 
-
 .info-tech-link{
-  color: #004C80;
+  color: #931616;
+  font-weight: 500;
   &:hover{
-    color: #004C80;
+    color: #931616;
   }
 }
+
+#info-tech-table{
+  margin-top: 3%;
+  color: black;
+  td, th {
+    border: none; 
+  }
+}
+
+#header-row-info-tech{
+  color: white;
+  font-size: 2em;
+}
+
+.odd-row-info-tech{
+  background: none repeat scroll 0 0 rgba(41, 71, 95, 0.95);
+}
+
+.even-row-info-tech{
+  background: none repeat scroll 0 0 rgba(41, 71, 95, 0.7);
+}
+
+#eduardo-poleo{
+  font-family:'Helvetica';
+  font-size: 1.1em;
+}
+
