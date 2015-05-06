@@ -94,16 +94,22 @@
   }
 }
 
+.table-row{
+  font-size: 1.1em; 
+}
+
 #header-row-info-tech{
   color: white;
   font-size: 2em;
 }
 
 .odd-row-info-tech{
+  @extend .table-row;
   background: none repeat scroll 0 0 rgba(41, 71, 95, 0.95);
 }
 
 .even-row-info-tech{
+  @extend .table-row;
   background: none repeat scroll 0 0 rgba(41, 71, 95, 0.7);
 }
 
