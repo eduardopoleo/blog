@@ -36,8 +36,15 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'pygments.rb'
 gem 'redcarpet'
+gem 'jsonapi-serializers'
+gem 'fabrication'
+gem 'faker'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'rspec-its'
+end
 
 group :production do
   gem 'pg'
@@ -55,4 +62,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
