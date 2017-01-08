@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
@@ -36,6 +36,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'pygments.rb'
 gem 'redcarpet'
+gem 'jsonapi-serializers'
+gem 'rack-cors', require: 'rack/cors'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 
@@ -55,4 +57,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

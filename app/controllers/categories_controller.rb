@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  http_basic_authenticate_with name: ENV['NAME'], password: ENV['PASSWORD'], only: [:new, :create] 
+  # http_basic_authenticate_with name: ENV['NAME'], password: ENV['PASSWORD'], only: [:new, :create]
   def new
     @category = Category.new
   end
@@ -7,11 +7,25 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
 
-    if @category.save
-      redirect_to new_category_path
-    else
-      render :new
-    end 
+    respond_to do |format|
+      format.html {
+        if @category.save
+          redirect_to new_category_path
+        else
+          render :new
+        end
+      }
+
+      format.json {
+        @category.save
+        render json: @category
+      }
+    end
+
+  end
+
+  def index
+    render json: CategorySerializer.serialize(Category.all, is_collection: true)
   end
 
   def show
